@@ -1,11 +1,5 @@
-function checkObject(string, object) {
-    for (const key in object) {
-        if (key === string) {
-            return true;
-        }
-    }
-
-    return false
+function isPropertyInObject(string, object) {
+    return object.hasOwnProperty(string)
 }
 
-module.exports = checkObject
+module.exports = isPropertyInObject
