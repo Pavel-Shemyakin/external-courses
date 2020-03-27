@@ -10,4 +10,4 @@ function some(array, callback) {
     return false;
 }
 
-module.exports = some()
+module.exports = some

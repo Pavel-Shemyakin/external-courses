@@ -3,11 +3,11 @@ function filter(array, callback) {
 
     for (let i = 0; i < array.length; i++) {
         if (callback(array[i], i, array)) {
-            filtered + array[i]
+            filtered.push(array[i])
         }
     }
 
     return filtered
 }
 
-module.exports = filter()
+module.exports = filter

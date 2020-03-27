@@ -2,14 +2,10 @@ function map(array, callback) {
     let mapped = []
 
     for (let i = 0; i < array.length; i++) {
-        if (mapped[i]) {
-            if (callback(array[i], i, array)) {
-                mapped + array[i]
-            }
-        }
+        mapped.push(callback(array[i], i, array))
     }
 
     return mapped
 }
 
-module.exports = map()
+module.exports = map

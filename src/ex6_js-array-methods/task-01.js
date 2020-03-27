@@ -19,4 +19,4 @@ function slice(array, start, end) {
     return result;
 }
 
-module.exports = slice()
+module.exports = slice
