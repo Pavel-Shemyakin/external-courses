@@ -1,34 +1,33 @@
 const calculator = {
-
     result: 0,
 
-    add(sum) {
-        if (sum) {
-            calculator.result += sum;
+    add(value) {
+        if (value) {
+            calculator.result += value;
         }
 
         return calculator.add;
     },
 
-    subtract(sub) {
-        if (sub) {
-            calculator.result -= sub;
+    subtract(value) {
+        if (value) {
+            calculator.result -= value;
         }
 
         return calculator.subtract;
     },
 
-    divide(div) {
-        if (div) {
-            calculator.result /= div;
+    divide(value) {
+        if (value) {
+            calculator.result /= value;
         }
 
         return calculator.divide;
     },
 
-    multiply(multi) {
-        if (multi) {
-            calculator.result *= multi;
+    multiply(value) {
+        if (value) {
+            calculator.result *= value;
         }
 
         return calculator.multiply;
