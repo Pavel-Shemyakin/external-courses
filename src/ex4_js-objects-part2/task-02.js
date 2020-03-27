@@ -1,7 +1,5 @@
 function createEmptyObject() {
-    const emptyObject = Object.create(null)
-
-    return emptyObject
+    return Object.create(null)
 }
 
 module.exports = createEmptyObject

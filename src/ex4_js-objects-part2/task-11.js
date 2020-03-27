@@ -1,6 +1,6 @@
 function checkElements(initialStr) {
     let str = initialStr.split('')
-    let result = {}
+    let result = []
 
     for (let i = 0; i < str.length; ++i) {
         if (result[str[i]] !== undefined) {
