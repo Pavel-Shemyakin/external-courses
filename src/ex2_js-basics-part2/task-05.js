@@ -1,4 +1,4 @@
-module.exports = function findMax(array) {
+module.exports = function findLargestElement(array) {
     let max = array[0];
 
     for (let i = 0; i < array.length; i++) {
@@ -9,4 +9,4 @@ module.exports = function findMax(array) {
     }
 
     return max;
-}
+} 
