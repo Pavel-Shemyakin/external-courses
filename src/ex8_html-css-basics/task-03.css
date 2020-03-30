@@ -1,0 +1,18 @@
+.border {
+    height: 200px;
+    width: 200px;
+}
+
+.border_1 {
+    border: 1px dashed red;
+}
+
+.border_2 {
+    outline: 1px solid green;
+}
+
+.border_3 {
+    border-width: 1px;
+	border-style: solid;
+	border-color: blue;
+}

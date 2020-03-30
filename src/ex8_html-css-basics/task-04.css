@@ -1,0 +1,70 @@
+@font-face { 
+    font-family: 'task-04'; 
+    src: url('task_data/task-04.ttf');
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+.extended_font {
+    font-family: task-04;
+}
+
+.Description_and_Nested_lists {
+    background-color: #080;
+    width: 9cm;
+	height: 15cm;
+}
+
+.background_paragraph {
+    background-color: cornflowerblue;
+    width: 50%;
+}
+
+.paragraph_align {
+    text-align: center;
+}
+
+.background_lists {
+    background-color: rgb(197, 197, 243);
+}
+
+.background_picture {
+    background-image: url(task_data/task-04-background.jpg);
+    width: 350px;
+    height: 150px;
+}
+
+.background {
+    width: 150px;
+	height: 150px;
+	padding: 10px;
+	border: 5px;
+}
+
+h3 {
+    font-family: Arial;
+}
+
+.h_white {
+    color: #fff;
+    text-shadow:
+    0 2px 2px #000, 
+    -2px 0 2px #000, 
+    0 -2px 2px #000;
+}
+
+.h_black {
+    color: #000;
+    text-shadow:
+    0 2px 2px #fff, 
+    -2px 0 2px #fff, 
+    0 -2px 2px #fff;
+}
+
+.text_underline {
+    text-decoration: underline;
+}
+
+.text_linethrough {
+    text-decoration: line-through;
+}
