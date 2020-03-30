@@ -1,6 +1,6 @@
 @font-face { 
     font-family: 'task-04'; 
-    src: url('task_data/task-04.ttf');
+    src: url('task-04.ttf');
     font-weight: normal; 
     font-style: normal; 
 }
@@ -29,7 +29,7 @@
 }
 
 .background_picture {
-    background-image: url(task_data/task-04-background.jpg);
+    background-image: url(task-04-background.jpg);
     width: 350px;
     height: 150px;
 }
