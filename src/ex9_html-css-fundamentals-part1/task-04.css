@@ -1,0 +1,68 @@
+.div_container, .div_1, .div_2, .div_3{
+    height: 200px;
+    width: 297px;
+}
+
+.div_container {
+    position: relative;
+}
+
+.div_1 {
+    background-color: #60b88d;
+    
+}
+
+.div_2 {
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    background-color: #90cdaf;
+    z-index: -1;
+
+}
+
+.div_3 {
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: #bfe3d1;
+    z-index: -2;
+}
+
+.shadow {
+    margin-top: 25px;
+    background: #60b88d;
+    height: 200px;
+    width: 297px;
+    box-shadow: 5px 5px 0px 0px #90cdaf, 10px 10px 0px 0px #bfe3d1;
+}
+
+.before-after {
+    margin-top: 25px;
+    background: #60b88d;
+    position: relative;
+    height: 200px;
+    width: 297px;
+}
+
+.before-after::before {
+    content: '';
+    position: absolute;
+    background: #90cdaf;
+    height: 200px;
+    width: 297px;
+    top: 5px;
+    left: 5px;
+    z-index: -1;
+}
+
+.before-after::after {
+    content: '';
+    position: absolute;
+    background: #bfe3d1;
+    height: 200px;
+    width: 297px;
+    top: 10px;
+    left: 10px;
+    z-index: -2;
+}

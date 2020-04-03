@@ -1,0 +1,47 @@
+.button_outer {
+    width: 265px;
+    height: 78px;
+    background-color: #cbcbcb;
+    border: 2px solid #666666;
+    border-radius: 20px;
+}
+
+.button_outer2 {
+    width: 261px;
+    height: 74px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+}
+    
+.button {
+    width: 247px;
+    height: 60px;
+    position: relative;
+    top: 7px;
+    left: 6px;
+    background: linear-gradient(180deg, #d5d5d5 25%, #d5d5d5 35%, #b7b7b7 55%);
+    box-shadow: 0px 0px 8px -3px rgba(34, 60, 80, 0.91);
+    border: 1px solid #8c8c8c;
+    border-radius: 13px;
+    text-align: center;
+    line-height: 56px;
+    letter-spacing: -1px;
+}
+
+.button__name_text {
+    margin: 0px 10px;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #555555;
+    text-shadow: 0px 2px 2px #fff;
+}
+
+.button__name_star{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    font-size: 32px;
+    color: #888888;
+    text-shadow: 1px 1px 1px #fff;
+}
