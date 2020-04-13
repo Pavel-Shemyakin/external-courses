@@ -1,0 +1,26 @@
+.table__header {
+    height: 25px;
+    font-size: 11px;
+    background-color: #e3eaf3;
+    text-transform: uppercase;
+}
+
+.table__row_dark .table__row_light {
+    height: 50px;
+    font-size: 14px;
+}
+
+.table__row_light {
+    font-size: 15px;
+    background-color: #f2f6fa;
+}
+
+.table__row_dark {
+    font-size: 15px;
+    background-color: #e8edf4;
+}
+
+.table__column_name {
+    text-transform: capitalize;
+}
+
