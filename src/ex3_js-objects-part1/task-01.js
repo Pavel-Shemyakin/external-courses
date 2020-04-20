@@ -1,10 +1,6 @@
-function createObject() {
-    let obj = {};
+let obj = {};
 
-    obj.number = 1;
-    obj.text = "Some String Here";
-    obj.bool = true;
-    delete obj.bool
-}
-
-module.exports = createObject
+obj.number = 1;
+obj.text = "Some String Here";
+obj.bool = true;
+delete obj.bool
