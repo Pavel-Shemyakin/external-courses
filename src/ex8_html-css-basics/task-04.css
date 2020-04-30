@@ -9,15 +9,16 @@
     font-family: task-04;
 }
 
-.Description_and_Nested_lists {
+.list {
     background-color: #080;
     width: 9cm;
-	height: 15cm;
+	height: max-content;
 }
 
 .background_paragraph {
     background-color: cornflowerblue;
-    width: 50%;
+    width: 90%;
+    min-width: 350px;
 }
 
 .paragraph_align {
@@ -34,18 +35,12 @@
     height: 150px;
 }
 
-.background {
-    width: 150px;
-	height: 150px;
-	padding: 10px;
-	border: 5px;
-}
-
 h3 {
     font-family: Arial;
 }
 
-.h_white {
+.title_text_white {
+    padding: 5px;
     color: #fff;
     text-shadow:
     0 2px 2px #000, 
@@ -53,7 +48,8 @@ h3 {
     0 -2px 2px #000;
 }
 
-.h_black {
+.title_text_black {
+    padding: 5px;
     color: #000;
     text-shadow:
     0 2px 2px #fff, 
@@ -61,10 +57,10 @@ h3 {
     0 -2px 2px #fff;
 }
 
-.text_underline {
+.underline {
     text-decoration: underline;
 }
 
-.text_linethrough {
+.linethrough {
     text-decoration: line-through;
 }
