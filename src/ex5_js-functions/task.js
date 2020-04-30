@@ -2,7 +2,7 @@ const calculator = {
     result: 0,
 
     add(value) {
-        if (value) {
+        if (Number(value) === value) {
             calculator.result += value;
         }
 
@@ -10,7 +10,7 @@ const calculator = {
     },
 
     subtract(value) {
-        if (value) {
+        if (Number(value) === value) {
             calculator.result -= value;
         }
 
@@ -18,7 +18,10 @@ const calculator = {
     },
 
     divide(value) {
-        if (value) {
+        if (Number(value) === value) {
+            if (calculator.result === 0) {
+                calculator.result = 1
+            }
             calculator.result /= value;
         }
 
@@ -26,7 +29,10 @@ const calculator = {
     },
 
     multiply(value) {
-        if (value) {
+        if (Number(value) === value) {
+            if (calculator.result === 0) {
+                calculator.result = 1
+            }
             calculator.result *= value;
         }
 
