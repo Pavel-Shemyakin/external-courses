@@ -1,0 +1,17 @@
+.border {
+    margin: 5px 5px;
+    height: 200px;
+    width: 200px;
+}
+
+.border_1 {
+    border: 1px dashed red;
+}
+
+.border_2 {
+    outline: 1px solid green;
+}
+
+.border_3 {
+    box-shadow: 0px 0px 0px 1px blue;
+}
