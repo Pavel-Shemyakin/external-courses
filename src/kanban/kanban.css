@@ -50,10 +50,13 @@
 .header_account {
     margin: 0 15px;
     display: flex;
-    border-radius: 50%;
     background-color: transparent;
     border: none;
     outline: none;
+}
+
+.header_account_menu {
+transform: scale(1, -1) translateY(-40px);
 }
 
 .footer {
@@ -62,7 +65,6 @@
     height: 55px;
     bottom: 0px;
     background: #0067A3;
-
 }
 
 .footer_text {
@@ -87,4 +89,25 @@
 .footer_text_initial {
     text-align: right;
     flex: 15 0 200px;
+}
+
+.menu {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    width: 309px; 
+    height: 149px;
+    background-color: rgb(0, 162, 255);
+    border-radius: 5px;
+}
+
+.menu_button {
+    font-family: Roboto;
+    font-size: 18px;
+    background: #FFFFFF;
+    margin: 3px 3px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 98%;
 }
