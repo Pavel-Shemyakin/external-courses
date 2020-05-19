@@ -1,50 +1,47 @@
+function Calculator() {}
 
-function Calculator() {
-    this.state = 0;
-}
+Calculator.state = 0;
 
-Calculator.prototype.add = function add(num) {
+Calculator.add = function(num) {
     this.state += num;
     return this;
 }
 
-Calculator.prototype.subtract = function add(num) {
+Calculator.subtract = function(num) {
     this.state -= num;
     return this;
 }
 
-Calculator.prototype.multiply = function add(num) {
+Calculator.multiply = function(num) {
     this.state *= num;
     return this;
 }
 
-Calculator.prototype.divide = function add(num) {
+Calculator.divide = function(num) {
     this.state /= num;
     return this;
 }
 
-Calculator.prototype.reset = function add(num) {
+Calculator.reset = function(num) {
     this.state = 0;
     return this;
 }
 
-Calculator.prototype.getResult = function add() {
+Calculator.getResult = function() {
     if (isNaN(this.state)) { return 0 }
     return this.state;
 }
 
-Calculator.prototype.setState = function add(state) {
+Calculator.setState = function(state) {
     this.state = state;
     return this;
 }
 
-Calculator.prototype.fetchData = function add(callback) {
-    let self = this;
-
-    setTimeout(function () {
-        self.state = 500;
-        callback(self.state);
+Calculator.fetchData = function(callback) {
+    setTimeout(() => {
+        this.state = 500;
+        callback(this.state);
     }, 500);
 }
 
-module.exports = new Calculator;
+module.exports = Calculator;
