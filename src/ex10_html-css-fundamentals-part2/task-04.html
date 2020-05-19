@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="task-04.css">
 </head>
-
 <body>
     <header class="header">
-        <button class="hidden navigation_bar">
-            <img src="task-04/images/burger.svg" alt="">
+        <button class="hidden burger_btn">
+            <img src="task-04/images/burger.svg" alt="menu">
         </button>
-
         <div class="logo">
             <span class="logo_text">Logo</span>
         </div>
-
         <div class="right_menu">
             <div class="instruments hidden_mini">
                 <button class="instruments_button">
@@ -32,8 +28,7 @@
                         <span>Phone</span>
                     </span>
                 </button>
-
-                <img src="task-04/images/marker_divide.svg" alt="">
+                <img src="task-04/images/marker_divide.svg" alt="divide">
                 <button class="instruments_button">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
                         height="34" viewBox="0 0 25 34">
@@ -47,8 +42,7 @@
                         <span>Saudi Arabia. Alreyadah</span>
                     </span>
                 </button>
-
-                <img src="task-04/images/marker_divide.svg" alt="">
+                <img src="task-04/images/marker_divide.svg" alt="divide">
                 <button class="instruments_button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 25">
                         <path class="cls-1"
@@ -64,21 +58,19 @@
             </div>
         </div>
     </header>
-
     <div class="navigation">
-        <div class="hidden_mini menu">
-            <button class="menu_button menu_button_left">HOME</button>
+        <div class="hidden_mini menu"></div>
+            <button class="menu_button">HOME</button>
             <button class="menu_button">What about ISAMA</button>
             <button class="menu_button">Our projects</button>
             <button class="menu_button">Exelent Team</button>
             <button class="menu_button">Contacts</button>
         </div>
         <div class="search">
-            <img class="search_image" src="task-04/images/loop.png" alt="">
+            <img class="search_image" src="task-04/images/loop.png" alt="loop icon">
             <input type="search" class="site-search" name="search" placeholder="Type your search words">
         </div>
     </div>
-
     <main>
         <div class="title">
             <h1 class="title_block">
@@ -88,12 +80,11 @@
                 <span class="title_block__description">make your business much better</span>
             </h1>
         </div>
-
         <div class="hidden_mini slider">
             <button class="slider__button_prev hidden hidden_mini">></button>
             <div>
-                <img src="task-04/images/box_green.png" alt="">
-                <div class="slider__photo_green">
+                <img src="task-04/images/box_green.png" alt="picture">
+                <div class="slider__photo slider__photo_green">
                     <svg class="slider-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 32 28">
                         <path class="slider-icon"
                             d="M29.2,3.112A9.635,9.635,0,0,0,16,2.824a9.635,9.635,0,0,0-13.192.288,9.394,9.394,0,0,0,0,13.393L13.865,27.43a3.048,3.048,0,0,0,4.278,0L29.2,16.5A9.394,9.394,0,0,0,29.2,3.112ZM27.769,15.095L16.716,26.02a1.016,1.016,0,0,1-1.425,0L4.239,15.095a7.423,7.423,0,0,1,0-10.574A7.6,7.6,0,0,1,14.648,4.3L16,5.517,17.36,4.3a7.6,7.6,0,0,1,10.409.221A7.422,7.422,0,0,1,27.769,15.095ZM9.255,5.345h0A4.246,4.246,0,0,0,5.005,9.588h0a0.5,0.5,0,0,0,1,0h0A3.247,3.247,0,0,1,9.254,6.343h0A0.5,0.5,0,1,0,9.255,5.345Z" />
@@ -102,8 +93,8 @@
                 </div>
             </div>
             <div>
-                <img src="task-04/images/box_orange.png" alt="">
-                <div class="slider__photo_orange">
+                <img src="task-04/images/box_orange.png" alt="picture">
+                <div class="slider__photo slider__photo_orange">
                     <svg class="slider-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 32 28">
                         <path 
                             d="M29.2,3.112A9.635,9.635,0,0,0,16,2.824a9.635,9.635,0,0,0-13.192.288,9.394,9.394,0,0,0,0,13.393L13.865,27.43a3.048,3.048,0,0,0,4.278,0L29.2,16.5A9.394,9.394,0,0,0,29.2,3.112ZM27.769,15.095L16.716,26.02a1.016,1.016,0,0,1-1.425,0L4.239,15.095a7.423,7.423,0,0,1,0-10.574A7.6,7.6,0,0,1,14.648,4.3L16,5.517,17.36,4.3a7.6,7.6,0,0,1,10.409.221A7.422,7.422,0,0,1,27.769,15.095ZM9.255,5.345h0A4.246,4.246,0,0,0,5.005,9.588h0a0.5,0.5,0,0,0,1,0h0A3.247,3.247,0,0,1,9.254,6.343h0A0.5,0.5,0,1,0,9.255,5.345Z" />
@@ -113,9 +104,8 @@
             </div>
             <button class="slider__button_next"><img src="task-04/images/slider_button.svg" alt="next"></button>
         </div>
-
-        <div class="info">
-            <div class="info_wrapper">
+        <section class="info">
+            <article class="info_wrapper">
                 <img class="icon" src="task-04/images/icon_what.png" alt="Lamp">
                 <dl class="info__block">
                     <dt class="info__block_title">
@@ -135,8 +125,8 @@
                         image.
                     </dd>
                 </dl>
-            </div>
-            <div class="info_wrapper">
+            </article>
+            <article class="info_wrapper">
                 <img class="icon" src="task-04/images/icon_why.png" alt="Tree">
                 <dl class="info__block">
                     <dt class="info__block_title">
@@ -152,9 +142,10 @@
                         business.
                     </dd>
                 </dl>
-            </div>
-        </div>
+            </article>
+        </section>
     </main>
+    <footer>
+    </footer>
 </body>
-
 </html>
