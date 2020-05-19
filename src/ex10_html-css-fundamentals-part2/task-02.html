@@ -1,75 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <form action="http://httpbin.org/post" method="POST">
         <fieldset>
             <legend>Personal data</legend>
             <p>
-                <label>
+                <label for="username">
                     Surname
-                    <input type="text" name="username">
                 </label>
+                <input type="text" name="username" id="username">
             </p>
-
             <p>
-                <label>
+                <label for="FirstName">
                     First Name
-                    <input type="text" name="FirstName">
                 </label>
+                <input type="text" name="FirstName" id="FirstName">
             </p>
-
             <p>
-                <label>
+                <label for="MiddleName">
                     Middle Name
-                    <input type="text" name="MiddleName">
                 </label>
+                <input type="text" name="MiddleName" id="MiddleName">
             </p>
-
             <p>
-                <label><input type="radio" name="gender" value="male"> male </label>
-                <label><input type="radio" name="gender" value="female"> female </label>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male"> male </label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female"> female </label>
             </p>
-
             <p>
-                <label>
+                <label for="age">
                     Age
-                    <input type="number" min="18" max="101" name="username">
                 </label>
+                <input type="number" min="18" max="101" name="age" id="age">
             </p>
-
             <p>
-                <label>
+                <label for="country_residence">
                     Country of Residence
-                    <select id="country_residence" name="country">
-                        <option value="Russia">Russia</option>
-                        <option value="USA">USA</option>
-                        <option value="Ukraine">Ukraine</option>
-                        <option value="Argentine">Argentine</option>
-                    </select>
                 </label>
+                <select id="country_residence" name="country">
+                    <option value="Russia">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Argentine">Argentine</option>
+                </select>
             </p>
-
             <p>
                 City
-                <label> Ryazan <input type="checkbox" id="check-ryazan" name="check-ryazan" value="Ryazan"></label>
-                <label> Moscow <input type="checkbox" id="check-moscow" name="check-moscow" value="Moscow"></label>
+                <label for="check-ryazan"> Ryazan </label>
+                <input type="checkbox" id="check-ryazan" name="check-ryazan" value="Ryazan">
+                <label for="check-moscow"> Moscow </label>
+                <input type="checkbox" id="check-moscow" name="check-moscow" value="Moscow">
             </p>
-
             <p>
-                <label>Photography
-                    <input type="file" id="photo" name="photo">
+                <label for="photo">
+                    Photography
                 </label>
+                <input type="file" id="photo" name="photo">
             </p>
-
             <hr>
-
             <p>
                 <select size="8" name="occupation">
                     <optgroup label="Technologies">
@@ -84,44 +78,36 @@
                     </optgroup>
                 </select>
             </p>
-
             <p>
-                <label>
+                <label for="salary">
                     Salary
-                    <input name="salary" type="range" min="0" max="100" step="1" value="50">
                 </label>
+                <input name="salary" id="salary" type="range" min="0" max="100" step="1" value="50">
             </p>
-
             <p>
-                <label>
-                    <textarea name="comment" cols="40" rows="7" placeholder="Tell us about yourself..."></textarea>
-                </label>
+                <textarea name="comment" cols="40" rows="7" placeholder="Tell us about yourself..."></textarea>
             </p>
         </fieldset>
-
         <fieldset>
             <legend>Contact information</legend>
             <p>
-                <label>
+                <label for="Site">
                     Site
-                    <input type="text" name="Site">
                 </label>
+                <input type="text" name="Site" id="Site">
             </p>
-
             <p>
-                <label>
+                <label for="Email">
                     Email
-                    <input type="text" name="Email">
                 </label>
+                <input type="text" name="Email" id="Email">
             </p>
-
             <p>
-                <label>
+                <label for="Phone">
                     Phone
-                    <input type="text" name="Phone">
                 </label>
+                <input type="text" name="Phone" id="Phone">
             </p>
-
         </fieldset>
         <p>
             <input type="password" name="password" required>
@@ -132,5 +118,4 @@
         </p>
     </form>
 </body>
-
 </html>
