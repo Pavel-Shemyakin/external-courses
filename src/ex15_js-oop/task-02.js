@@ -6,26 +6,26 @@ function Device(name, power, isPlugged) {
 
 Device.prototype.plugInOut = function plugInOut() {
     if (this.isPlugged) {
-        var pluged;
+        var plugged;
         console.log('plugged!');
-        pluged = true;
+        plugged = true;
     } else {
         console.log('not plugged!');
-        pluged = false;
+        plugged = false;
     }
-    return pluged;
+    return plugged;
 };
 
-function Computer(name, power, isPlugged, rgbColorCount) {
+function Computer(name, power, isPlugged, rgbColor) {
     Device.call(this, name, power, isPlugged);
-    this.rgbColorCount = rgbColorCount;
+    this.rgbColor = rgbColor;
 }
 
 Computer.prototype = Object.create(Device.prototype);
 Computer.prototype.constructor = Computer;
 
-function Notebook(name, power, isPlugged, rgbColorCount, isClosed) {
-    Computer.call(this, name, power, isPlugged, rgbColorCount);
+function Notebook(name, power, isPlugged, rgbColor, isClosed) {
+    Computer.call(this, name, power, isPlugged, rgbColor);
     this.isClosed = isClosed;
 }
 

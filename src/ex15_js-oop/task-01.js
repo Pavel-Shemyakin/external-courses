@@ -18,12 +18,9 @@ class CandiesGift {
         return response;
     }
     totalWeight() {
-        return this.list.reduce(
-            function (sum, item) {
-                return sum + item.weight;
-            },
-            0
-        ) + 'g';
+        return this.list.reduce(function (sum, item) {
+                return sum + item.weight
+            }, 0) + 'g';
     }
     findCandy(candyName) {
         let result = "Candy not found";
@@ -35,30 +32,14 @@ class CandiesGift {
         console.log(result);
 
     }
-    sortByWeight() {
+    sortBy(property) {
         this.list = this.list.sort(
             function (current, next) {
                 let sort;
-                if (current.weight < next.weight) {
-                    sort = 1;
-                } else if (current.weight > next.weight) {
+                if (current[property] < next[property]) {
                     sort = -1;
-                } else {
-                    sort = 0;
-                }
-                return sort;
-            }
-        );
-        return Array.from(this.list);
-    }
-    sortByName() {
-        this.list = this.list.sort(
-            function (current, next) {
-                let sort;
-                if (current.name > next.name) {
+                } else if (current[property] > next[property]) {
                     sort = 1;
-                } else if (current.name < next.name) {
-                    sort = -1;
                 } else {
                     sort = 0;
                 }
