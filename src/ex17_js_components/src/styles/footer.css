@@ -1,0 +1,31 @@
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 55px;
+    bottom: 0px;
+    background: #0067A3;
+}
+
+.footer_text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.footer_text_active {
+    flex: 1 1 175px;
+}
+
+.footer_text_finished {
+    flex: 1 1 175px;
+}
+
+.footer_text_initial {
+    text-align: right;
+    flex: 15 0 200px;
+}
