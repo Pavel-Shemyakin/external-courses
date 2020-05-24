@@ -1,0 +1,12 @@
+<svg id="menu" xmlns="http://www.w3.org/2000/svg" width="60" height="56" viewBox="0 0 60 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3687c4;
+      }
+    </style>
+  </defs>
+  <rect id="burger_3" data-name="burger 3" class="cls-1" y="46" width="60" height="10"/>
+  <rect id="burger_2" data-name="burger 2" class="cls-1" y="23" width="60" height="10"/>
+  <rect id="burger_1" data-name="burger 1" class="cls-1" width="60" height="10"/>
+</svg>

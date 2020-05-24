@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task-04.css">
+</head>
+<body>
+    <header class="header">
+        <button class="hidden burger_btn">
+            <img src="task-04/images/burger.svg" alt="menu">
+        </button>
+        <div class="logo">
+            <span class="logo_text">Logo</span>
+        </div>
+        <div class="right_menu">
+            <div class="instruments hidden_mini">
+                <button class="instruments_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28">
+                        <path class="cls-1"
+                            d="M3.413,0.606l-2.581,2.6c-1.426,1.436-.74,3.15,0,5.2A61.4,61.4,0,0,0,8.97,19.12a55.13,55.13,0,0,0,10.577,8.136c1.883,0.976,3.737,1.436,5.163,0l2.582-2.6a1.722,1.722,0,0,0,0-2.6l-5.163-3.9a1.934,1.934,0,0,0-2.581,0h0L18.02,19.694a51.829,51.829,0,0,1-5.572-4.788A44.85,44.85,0,0,1,8.286,10l1.58-1.591a1.969,1.969,0,0,0,0-2.6l-3.872-5.2a1.816,1.816,0,0,0-2.581,0m2.5,9.179L7.989,7.7a1.253,1.253,0,0,0,0-1.654L5.525,2.733a1.043,1.043,0,0,0-1.643,0L2.239,4.388C1.6,5,1.781,6.421,2.122,7.106a54.83,54.83,0,0,0,7.745,10.4c3.268,3.57,10.971,8.45,10.971,8.45a3.272,3.272,0,0,0,2.7-.118l1.643-1.655a1.25,1.25,0,0,0,0-1.654l-3.286-2.482a1.231,1.231,0,0,0-1.643,0l-2.024,2.039C17.75,21.747,10.146,16.714,5.915,9.785Z" />
+                        <path data-name="icon" class="cls-1"
+                            d="M171.33,25.271H149.311a3.654,3.654,0,0,1-3.669-3.638V5.261a3.654,3.654,0,0,1,3.669-3.638H171.33A3.654,3.654,0,0,1,175,5.261V21.633A3.654,3.654,0,0,1,171.33,25.271Zm-21.1-21.83,10.092,8.7,10.092-8.7H150.229Zm22.936,1.819a1.8,1.8,0,0,0-.583-1.323L160.321,14.357,148.06,3.937a1.8,1.8,0,0,0-.583,1.323V21.633a1.827,1.827,0,0,0,1.834,1.819H171.33a1.827,1.827,0,0,0,1.835-1.819V5.261Z" />
+                    </svg>
+                    <span class="tooltip-content">
+                        <span class="tooltip-arrow"></span>
+                        <span>Phone</span>
+                    </span>
+                </button>
+                <img src="task-04/images/marker_divide.svg" alt="divide">
+                <button class="instruments_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25"
+                        height="34" viewBox="0 0 25 34">
+                        <image id="Background" width="25" height="34"
+                            xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAiCAYAAACqVHINAAAALklEQVRIie3NMQEAMAwDoGz+PacKevYDA7y2zbF/HUQikUgkO4lEIpEsJJIjSQZBGQRAULhnPQAAAABJRU5ErkJggg==" />
+                        <path class="cls-1"
+                            d="M12.46,33.995C10.386,34.006-.017,18.078-0.017,12.748A12.615,12.615,0,0,1,12.46,0,12.615,12.615,0,0,1,24.938,12.748C24.938,18.007,14.5,34.006,12.46,33.995Zm0-31.87a10.512,10.512,0,0,0-10.4,10.623c0,4.442,8.669,18.069,10.4,18.06,1.7,0.009,10.4-13.677,10.4-18.06A10.512,10.512,0,0,0,12.46,2.125Zm0,15.935a5.313,5.313,0,1,1,5.2-5.312A5.256,5.256,0,0,1,12.46,18.06Zm0-8.5a3.188,3.188,0,1,0,3.119,3.187A3.154,3.154,0,0,0,12.46,9.561Z" />
+                    </svg>
+                    <span class="tooltip-content">
+                        <span class="tooltip-arrow"></span>
+                        <span>Saudi Arabia. Alreyadah</span>
+                    </span>
+                </button>
+                <img src="task-04/images/marker_divide.svg" alt="divide">
+                <button class="instruments_button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" viewBox="0 0 30 25">
+                        <path class="cls-1"
+                            d="M-141.587-.394l-2.582,2.6c-1.426,1.436-.74,3.15,0,5.2A61.4,61.4,0,0,0-136.03,18.12a55.114,55.114,0,0,0,10.577,8.136c1.883,0.976,3.737,1.436,5.163,0l2.582-2.6a1.723,1.723,0,0,0,0-2.6l-5.164-3.9a1.934,1.934,0,0,0-2.581,0h0l-1.527,1.538a51.808,51.808,0,0,1-5.572-4.788A44.93,44.93,0,0,1-136.714,9l1.58-1.591a1.968,1.968,0,0,0,0-2.6l-3.872-5.2a1.816,1.816,0,0,0-2.581,0m2.5,9.179,2.074-2.088a1.253,1.253,0,0,0,0-1.654l-2.464-3.309a1.043,1.043,0,0,0-1.643,0l-1.643,1.655c-0.644.611-.458,2.034-0.117,2.718a54.815,54.815,0,0,0,7.744,10.4c3.268,3.57,10.972,8.45,10.972,8.45a3.273,3.273,0,0,0,2.7-.118l1.642-1.655a1.249,1.249,0,0,0,0-1.654l-3.285-2.482a1.231,1.231,0,0,0-1.643,0l-2.024,2.039C-127.25,20.747-134.854,15.714-139.085,8.785Z" />
+                        <path data-name="icon" class="cls-1"
+                            d="M26.33,24.271H4.311a3.654,3.654,0,0,1-3.67-3.638V4.261A3.654,3.654,0,0,1,4.311.623H26.33A3.654,3.654,0,0,1,30,4.261V20.633A3.654,3.654,0,0,1,26.33,24.271ZM5.229,2.442l10.092,8.7,10.092-8.7H5.229ZM28.165,4.261a1.8,1.8,0,0,0-.583-1.323L15.321,13.357,3.06,2.937a1.8,1.8,0,0,0-.583,1.323V20.633a1.827,1.827,0,0,0,1.835,1.819H26.33a1.827,1.827,0,0,0,1.835-1.819V4.261Z" />
+                    </svg>
+                    <span class="tooltip-content">
+                        <span class="tooltip-arrow"></span>
+                        <span>This is mail</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="navigation">
+        <div class="hidden_mini menu">
+            <button class="menu_button">HOME</button>
+            <button class="menu_button">What about ISAMA</button>
+            <button class="menu_button">Our projects</button>
+            <button class="menu_button">Exelent Team</button>
+            <button class="menu_button">Contacts</button>
+        </div>
+        <div class="search">
+            <img class="search_image" src="task-04/images/loop.png" alt="loop icon">
+            <input type="search" class="site-search" name="search" placeholder="Type your search words">
+        </div>
+    </div>
+    <main>
+        <div class="title">
+            <h1 class="title_block">
+                <span class="title_block__main_text">LET’S DRAW SOME ARTS</span>
+                <br>
+                <span class="title_block__and">&</span>
+                <span class="title_block__description">make your business much better</span>
+            </h1>
+        </div>
+        <div class="hidden_mini slider">
+            <button class="slider__button_prev hidden hidden_mini">></button>
+            <div>
+                <img src="task-04/images/box_green.png" alt="picture">
+                <div class="slider__photo slider__photo_green">
+                    <svg class="slider-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="28"
+                        viewBox="0 0 32 28">
+                        <path class="slider-icon"
+                            d="M29.2,3.112A9.635,9.635,0,0,0,16,2.824a9.635,9.635,0,0,0-13.192.288,9.394,9.394,0,0,0,0,13.393L13.865,27.43a3.048,3.048,0,0,0,4.278,0L29.2,16.5A9.394,9.394,0,0,0,29.2,3.112ZM27.769,15.095L16.716,26.02a1.016,1.016,0,0,1-1.425,0L4.239,15.095a7.423,7.423,0,0,1,0-10.574A7.6,7.6,0,0,1,14.648,4.3L16,5.517,17.36,4.3a7.6,7.6,0,0,1,10.409.221A7.422,7.422,0,0,1,27.769,15.095ZM9.255,5.345h0A4.246,4.246,0,0,0,5.005,9.588h0a0.5,0.5,0,0,0,1,0h0A3.247,3.247,0,0,1,9.254,6.343h0A0.5,0.5,0,1,0,9.255,5.345Z" />
+                    </svg>
+                    <span>Like</span>
+                </div>
+            </div>
+            <div>
+                <img src="task-04/images/box_orange.png" alt="picture">
+                <div class="slider__photo slider__photo_orange">
+                    <svg class="slider-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="28"
+                        viewBox="0 0 32 28">
+                        <path
+                            d="M29.2,3.112A9.635,9.635,0,0,0,16,2.824a9.635,9.635,0,0,0-13.192.288,9.394,9.394,0,0,0,0,13.393L13.865,27.43a3.048,3.048,0,0,0,4.278,0L29.2,16.5A9.394,9.394,0,0,0,29.2,3.112ZM27.769,15.095L16.716,26.02a1.016,1.016,0,0,1-1.425,0L4.239,15.095a7.423,7.423,0,0,1,0-10.574A7.6,7.6,0,0,1,14.648,4.3L16,5.517,17.36,4.3a7.6,7.6,0,0,1,10.409.221A7.422,7.422,0,0,1,27.769,15.095ZM9.255,5.345h0A4.246,4.246,0,0,0,5.005,9.588h0a0.5,0.5,0,0,0,1,0h0A3.247,3.247,0,0,1,9.254,6.343h0A0.5,0.5,0,1,0,9.255,5.345Z" />
+                    </svg>
+                    <span>Like</span>
+                </div>
+            </div>
+            <button class="slider__button_next"><img src="task-04/images/slider_button.svg" alt="next"></button>
+        </div>
+        <section class="info">
+            <article class="info_wrapper">
+                <img class="icon" src="task-04/images/icon_what.png" alt="Lamp">
+                <dl class="info__block">
+                    <dt class="info__block_title">
+                        What about ISAMA
+                    </dt>
+                    <dd class="info__block_text">
+                        ISAMA is a marketing foundation located in Riyadh built on the talent of creation that leads
+                        to a
+                        modern concept of professionalism. At ISAMA we believe even if you are good at what you do,
+                        you have
+                        agreat product or you provide an excellent service. We still can present you a little better
+                        to the
+                        world, creating your full identity, provides you with your marketing plans, design your
+                        website,
+                        print your publications, design your logo’s and offices. Simply we give your business the
+                        perfect
+                        image.
+                    </dd>
+                </dl>
+            </article>
+            <article class="info_wrapper">
+                <img class="icon" src="task-04/images/icon_why.png" alt="Tree">
+                <dl class="info__block">
+                    <dt class="info__block_title">
+                        Why we exist
+                    </dt>
+                    <dd class="info__block_text">
+                        Reaching customer satisfaction through providing them with cutting-edge technologies that
+                        give
+                        clients access to a wide range of tools, ensuring efficient and results-oriented
+                        communication
+                        solutions, which grant them a special character that distinguishes them from the others in
+                        the
+                        business.
+                    </dd>
+                </dl>
+            </article>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

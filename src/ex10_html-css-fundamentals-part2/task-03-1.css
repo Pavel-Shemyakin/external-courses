@@ -1,0 +1,14 @@
+#table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 440px;
+    width: 575px;
+    color: #50637b;
+}
+
+tr:hover:not(.table__header) {
+    background-color: #e2e5e9;
+}
+
+td {
+    padding-left: 15px;
+}

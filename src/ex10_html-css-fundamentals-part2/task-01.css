@@ -1,0 +1,13 @@
+  #image_circle{
+    width: 300px;
+    height: 300px;
+    -webkit-mask-image: url(task-01/round.png);
+    -webkit-mask-size: 300px;
+  }
+
+  #image_sheep{
+    width: 300px;
+    height: 300px;
+    -webkit-mask-image: url(task-01/sheep.png);
+    -webkit-mask-size: 300px;
+  } 

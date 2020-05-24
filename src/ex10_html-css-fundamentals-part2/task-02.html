@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://httpbin.org/post" method="POST">
+        <fieldset>
+            <legend>Personal data</legend>
+            <p>
+                <label for="username">
+                    Surname
+                </label>
+                <input type="text" name="username" id="username">
+            </p>
+            <p>
+                <label for="FirstName">
+                    First Name
+                </label>
+                <input type="text" name="FirstName" id="FirstName">
+            </p>
+            <p>
+                <label for="MiddleName">
+                    Middle Name
+                </label>
+                <input type="text" name="MiddleName" id="MiddleName">
+            </p>
+            <p>
+                <input type="radio" name="gender" value="male" id="male">
+                <label for="male"> male </label>
+                <input type="radio" name="gender" value="female" id="female">
+                <label for="female"> female </label>
+            </p>
+            <p>
+                <label for="age">
+                    Age
+                </label>
+                <input type="number" min="18" max="101" name="age" id="age">
+            </p>
+            <p>
+                <label for="country_residence">
+                    Country of Residence
+                </label>
+                <select id="country_residence" name="country">
+                    <option value="Russia">Russia</option>
+                    <option value="USA">USA</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Argentine">Argentine</option>
+                </select>
+            </p>
+            <p>
+                City
+                <label for="check-ryazan"> Ryazan </label>
+                <input type="checkbox" id="check-ryazan" name="check-ryazan" value="Ryazan">
+                <label for="check-moscow"> Moscow </label>
+                <input type="checkbox" id="check-moscow" name="check-moscow" value="Moscow">
+            </p>
+            <p>
+                <label for="photo">
+                    Photography
+                </label>
+                <input type="file" id="photo" name="photo">
+            </p>
+            <hr>
+            <p>
+                <select size="8" name="occupation">
+                    <optgroup label="Technologies">
+                        <option value="Russia">Web Master</option>
+                        <option value="USA">Database Administrator</option>
+                        <option value="Ukraine">Computer-aided design</option>
+                    </optgroup>
+                    <optgroup label="Finance">
+                        <option value="Argentine">Economic Planning</option>
+                        <option value="Argentine">Management accounting</option>
+                        <option value="Argentine">Budgeting and planning</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <label for="salary">
+                    Salary
+                </label>
+                <input name="salary" id="salary" type="range" min="0" max="100" step="1" value="50">
+            </p>
+            <p>
+                <textarea name="comment" cols="40" rows="7" placeholder="Tell us about yourself..."></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Contact information</legend>
+            <p>
+                <label for="Site">
+                    Site
+                </label>
+                <input type="text" name="Site" id="Site">
+            </p>
+            <p>
+                <label for="Email">
+                    Email
+                </label>
+                <input type="text" name="Email" id="Email">
+            </p>
+            <p>
+                <label for="Phone">
+                    Phone
+                </label>
+                <input type="text" name="Phone" id="Phone">
+            </p>
+        </fieldset>
+        <p>
+            <input type="password" name="password" required>
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+        </p>
+    </form>
+</body>
+</html>
