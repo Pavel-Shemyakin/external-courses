@@ -1,0 +1,231 @@
+@font-face {
+    font-family: "roboto"; 
+    src: url("kanban/Roboto-Medium.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    } 
+
+.body {
+    margin: 0 0 0 0;
+    background-color: #0079bf;
+    height: 100vh;
+    font-family: roboto; 
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    width: 100vw;
+    height: 55px;
+    top: 0px;
+    background: #0067A3;
+}
+
+.header_menu {
+    margin: 0 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.header_logo {
+    margin-right: auto;
+    font-family: Roboto;
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.header_create {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 25px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    width: 181px;
+    height: 33px;
+    border: none;
+    outline: none;
+}
+
+.header_create_text {
+    font-family: Roboto;
+    font-size: 18px;
+    margin: auto auto;
+}
+
+.header_account {
+    margin: 0 15px;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.header_account_menu {
+transform: scale(1, -1) translateY(-40px);
+}
+
+.footer {
+    position: relative;
+    width: 100vw;
+    height: 55px;
+    bottom: 0px;
+    background: #0067A3;
+}
+
+.footer_text {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.footer_text_active {
+    flex: 1 1 175px;
+}
+
+.footer_text_finished {
+    flex: 1 1 175px;
+}
+
+.footer_text_initial {
+    text-align: right;
+    flex: 15 0 200px;
+}
+
+.menu {
+    position: absolute;
+    top: 55px;
+    right: 0px;
+    width: 309px; 
+    height: 149px;
+    background-color: rgb(0, 162, 255);
+    border-radius: 5px;
+}
+
+.menu_button {
+    font-family: Roboto;
+    font-size: 18px;
+    background: #FFFFFF;
+    margin: 3px 3px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 98%;
+}
+
+.main {
+    height: calc(100% - 110px);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.task_block_name {
+    font-size: 25px;
+    width: 90%;
+    margin: 5px auto;
+    padding-top: 10px;
+}
+
+.task_block {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background: #EBECF0;
+    height: 95%;
+    width: 23%;
+    min-width: 250px;
+    border-radius: 18px;
+    overflow-y: auto;
+    margin: 5px;
+}
+
+.task_block_value {
+    font-size: 20px;
+    margin: 5px auto;
+    min-height: fit-content;
+    width: 90%;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.task_enter, .task_block_select {
+    font-size: 20px;
+    margin: 5px auto;
+    padding: 0 0 0 0;
+    min-height: max-content;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.task_add {
+    font-size: 20px;
+    height: 47px;
+    width: 90%;
+    text-align: left;
+    border-radius: 10px;
+    outline: none;
+    margin: 5px auto;
+    background: none;
+    border: none;
+    color: #5E6C84;
+    order: 2;
+}
+
+.task_enter, .task_block_select, .task_block_value {
+    padding: 11px;
+    box-sizing: border-box;
+}
+
+.task_add:active {
+    background: white;
+}
+
+.task_add:hover {
+    cursor: pointer;
+}
+
+.task_add:disabled {
+    opacity: 20%;
+    cursor: default;
+}
+
+.task_add:disabled:hover {
+    cursor: default;
+}
+
+.task_block_select > * {
+    cursor: pointer;
+    order: 1;
+}
+
+.task_block_select_option:hover {
+    cursor: pointer;
+    color: #0079bf;
+}
+
+.select_option {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.task_block_select:disabled {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: black;
+}
